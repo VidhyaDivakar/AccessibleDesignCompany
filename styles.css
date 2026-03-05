@@ -1,0 +1,18 @@
+.navFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.menuItem {
+    width: 70px;
+    height: 70px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
