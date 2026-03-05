@@ -1,18 +1,59 @@
+.site-header {
+    background: #929b7b;
+    color: #fff;
+    padding: 50px 50px;
+}
+
 .navFlex {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: end;
+    gap: 10px;
     align-items: center;
-    height: 200px;
-    background-color: lightgray;
+    height: 100px;
+    /* background-color: lightgray; */
 }
 
 .menuItem {
     width: 70px;
     height: 70px;
-    background-color: steelblue;
+    background-color: rgb(233, 130, 130);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Hero Content CSS */
+.hero {
+    height: 90vh;
+    /* ViewPort Height*/
+    background-image: url("img/heroImage.jpg");
+    background-size: cover;
+    /* Covers the entire section*/
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroContent {
+    text-align: center;
+    color: rgb(190, 103, 103);
+}
+
+.heroContent h1 {
+    font-size: 48px;
+}
+
+.heroContent p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.heroButton {
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    text-decoration: none;
 }
