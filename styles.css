@@ -86,30 +86,57 @@ main {
 }
 
 .grid1 {
-    background-color: rgb(164, 223, 223);
+    background-image: url("img/grid1img.jpg");
+    background-size: cover;
+    /* To fill entire grid card*/
+    background-position: center;
+    height: 220px;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+
 }
 
+/* This is decendent selector for image  */
+/*.grid1 img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}*/
+
 .grid2 {
-    background-color: rgb(160, 180, 216);
+    background-image: url("img/grid2img.jpg");
+    background-size: cover;
+    /* To fill entire grid card*/
+    background-position: center;
+    height: 220px;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+
 }
 
 .grid3 {
-    background-color: rgb(226, 230, 209);
+    background-image: url("img/grid3img.jpg");
+    background-size: cover;
+    /* To fill entire grid card*/
+    background-position: center;
+    height: 220px;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+
 }
 
 .grid1,
@@ -117,4 +144,35 @@ main {
 .grid3 {
     height: 400px;
     padding: 20px
+}
+
+/* Adding Media Queries */
+/* This is for Desktop */
+.gridServices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* This is for Tablet */
+@media (max-width:900px) {
+    .gridServices {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* This is for Mobile */
+@media (max-width:600px) {
+    .gridServices {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gridButton {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
