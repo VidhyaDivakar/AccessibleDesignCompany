@@ -4,6 +4,10 @@
     padding: 50px 50px;
 }
 
+main {
+    background-color: black
+}
+
 .navFlex {
     display: flex;
     flex-direction: row;
@@ -68,4 +72,49 @@
 .aboutContent {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.gridServices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    background-color: black;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.grid1 {
+    background-color: rgb(164, 223, 223);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.grid2 {
+    background-color: rgb(160, 180, 216);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.grid3 {
+    background-color: rgb(226, 230, 209);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.grid1,
+.grid2,
+.grid3 {
+    height: 400px;
+    padding: 20px
 }
