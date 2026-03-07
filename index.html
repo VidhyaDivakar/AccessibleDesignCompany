@@ -6,14 +6,15 @@
     <title>Accessible Design</title>
 
     <!-- Implement a responsive navigation bar using Flexbox that adjusts to smaller screen sizes.-->
-    <nav class="main-nav">
-        <div class="logo"> <img src="img/CompanyLogo.jpg" alt="CompanyLogo">
-        </div>
-        <div class="navFlex">
-            <a class="menuItem" href="#Home">Home</a>
-            <a class="menuItem" href="aboutUs.html">About Us</a>
-            <a class="menuItem" href="#Services">Services</a>
-            <a class="menuItem" href="#Contact">Contact</a>
+
+    <div class="logo"> <img src="img/CompanyLogo.jpg" alt="CompanyLogo">
+    </div>
+    <nav role="navigation" aria-label="Main Menu">
+        <ul class="navFlex">
+            <li class="menuItem"><a href="#Home">Home</a></li>
+            <li class="menuItem"><a href="aboutUs.html">About Us</a></li>
+            <li class="menuItem"><a href="#Services">Services</a></li>
+            <li class="menuItem"><a href="contact.html">Contact</a></li>
         </div>
     </nav>
 </header>
@@ -62,6 +63,6 @@
         <h3>Review</h3>
     </section>
 
-    <footer></footer>
+    <footer>© 2026 Accessible Design Co. All Rights Reserved</footer>
 
 </html>

@@ -11,7 +11,7 @@ main {
 .navFlex {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 10px;
     align-items: center;
     height: 100px;
@@ -26,6 +26,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.navFlex li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    list-style: none;
 }
 
 /* Hero Content CSS */
