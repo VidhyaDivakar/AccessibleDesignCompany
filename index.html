@@ -6,29 +6,31 @@
     <title>Accessible Design</title>
 
     <!-- Implement a responsive navigation bar using Flexbox that adjusts to smaller screen sizes.-->
-
+    <h2> Accessible Design Company</h2>
     <div class="logo"> <img src="img/CompanyLogo.jpg" alt="CompanyLogo">
     </div>
     <nav role="navigation" aria-label="Main Menu">
         <ul class="navFlex">
-            <li class="menuItem"><a href="index.html">Home</a></li>
+            <li class="menuItem"><a href="#hero">Home</a></li>
             <li class="menuItem"><a href="aboutUs.html">About Us</a></li>
-            <li class="menuItem"><a href="#Services">Services</a></li>
+            <li class="menuItem"><a href="#serviceHeading">Services</a></li>
             <li class="menuItem"><a href="contact.html">Contact</a></li>
             </div>
     </nav>
 </header>
 <main>
-    <section class="hero">
+    <section id="hero">
         <div class="heroContent">
             <h1>Design Beyond Ordinary</h1>
             <h2>Beyond Design — We Build Experiences.</h2>
-            <a href="#Services" class="heroButton">How We do Better</a>
+            <a href="#serviceHeading" class="heroButton">How We do Better</a>
+
         </div>
     </section>
 
-    <H2> How DO WE DO BETTER</H2>
+
     <section class="services">
+        <h2 id="serviceHeading"> HOW DO WE DO BETTER</H2>
         <div class="gridServices">
             <div class="grid1">
                 <h1> Design without Limits</h1>
@@ -51,18 +53,34 @@
     </section>
 
 
-    <body>
-
-    </body>
-
 </main>
 
 <article class="customer_review">
-    <h2>Sony </h2>
-    <section class="main_review">
-        <h3>Review</h3>
-    </section>
+    <section class="customerStories">
+        <h2>Customer Stories</h2>
+        <div class="storiesContainer">
 
-    <footer>© 2026 Accessible Design Co. All Rights Reserved</footer>
+            <div class="storyCard">
+                <p class="storyText">"The Accessible Design did the job very well and help to transformed our website —
+                    accessibility first!"</p>
+                <h4 class="customerName">— Alex Warren, CEO</h4>
+            </div>
+
+            <div class="storyCard">
+                <p class="storyText">"Amazing UX design. Everyone on our team loves it. I recommend them to the fullest"
+                </p>
+                <h4 class="customerName">— George Michael, Product Manager</h4>
+            </div>
+
+            <div class="storyCard">
+                <p class="storyText">"Their work is unique and out of the box, great team to work with."</p>
+                <h4 class="customerName">— Fiola Davis, Founder</h4>
+            </div>
+
+        </div>
+    </section>
+</article>
+
+<footer>© 2026 Accessible Design Co. All Rights Reserved</footer>
 
 </html>
